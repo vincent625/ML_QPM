@@ -1,0 +1,11 @@
+{
+  "version": "qpm-waveform-reference-policy-1.1.0",
+  "time_policy": "retrospective",
+  "minimum_physical_runs": 8,
+  "preferred_physical_runs": 20,
+  "instrument_policy": "same_instrument_then_cross_instrument_shape",
+  "minimum_cross_instrument_instruments": 2,
+  "cross_instrument_normalization": "baseline_center_then_unit_peak_to_peak",
+  "allow_cross_step_fallback": true,
+  "chip_context_for_coupler": true
+}

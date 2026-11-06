@@ -1,0 +1,7 @@
+task_id,liquid_class_index,operation,pipette,volumes_ul,physical_runs,instruments,model_single_operation_waveforms
+lc49_aspirate,49,aspirate,PIP2,"[5.0, 38.0, 45.0, 50.0, 60.0]",450,43,2245
+lc49_dispense,49,dispense,PIP2,"[6.0, 29.0, 35.0, 38.0, 50.0]",450,43,2120
+lc55_aspirate,55,aspirate,PIP2,"[25.0, 50.0, 70.0, 72.0, 100.0]",450,43,2225
+lc55_dispense,55,dispense,PIP2,"[33.0, 60.0, 72.0, 90.0, 99.0]",450,43,2049
+lc61_aspirate,61,aspirate,PIP2,"[20.0, 50.0, 60.0, 66.0, 300.0]",450,43,2169
+lc61_dispense,61,dispense,PIP2,"[50.0, 60.0, 69.0, 200.0, 250.0]",450,43,1725

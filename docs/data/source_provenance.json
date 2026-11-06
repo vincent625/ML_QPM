@@ -1,0 +1,46 @@
+{
+  "snapshot_date": "2026-11-06",
+  "content": "Frozen benchmark aggregates and de-identified group-waveform summaries only; no source archive, run/sample/patient identifier, individual trace or prediction-level row is included.",
+  "models_retrained": false,
+  "metrics_recomputed": false,
+  "benchmark_metrics_recomputed": false,
+  "observed_group_visual_summaries_computed": true,
+  "source_files_sha256": {
+    "all_csa_run_screen_20261027/summary.json": "68aff53b419500e6719a40d3032affbf8e37131181b879ecbd307db3381c8228",
+    "baseline_source_pool_audit_20261104.json": "a166276f9452a729db771681136c4dbaeca5e30e278153aed915c9c30890f113",
+    "flagged_qpm_investigation_20261027_all_runs/cohort_qpm_validation.json": "e98dfc8f8a930ab75a284c563dfbc0169ea2288f4ed16ef5f7f8c4922c52a5de",
+    "low_read_hypotheses_20261104_v0180/validation.json": "fcaccab34e1264e2a99303c4987e764f86980e686dddc2bf397ec2b6404825b7",
+    "expanded_csa_outcomes_20261027_gx8_v2/model_performance.csv": "1109b286310059a08a191d935fb2c5617517999ddf06895f03a108124b3da475",
+    "nature_findings_publication_20261031/source_data/six_task_classification_heatmap.csv": "8036fe6c8ad5db763edfb9e2824ec535522e4a1808869da795696962bb1b96ef",
+    "qpm_volume_models_expanded_20261027_gx8_v2/cohorts.csv": "d3e8196e0ceb5a31b51c23a7244738513ac38fe6948e86a2069bee69804ced24",
+    "qpm_volume_all_operations_20261027_v2/all_operations_run_balanced_performance.csv": "474ffcd7dcd08acb53ffa1aa6de4eb93454c2ab8bee4ed8f30c419861d65c1c2",
+    "next_run_forecast_20261021/model_performance_summary.csv": "1d4371fb64d114f0b66697e3f8d20db166adfb55143c7ddf597912a971c28aa7",
+    "presentation_updates_20261104/read_metrics_by_plugin_source_data.csv": "9a7cd95be84586ccea56106652ad73244e73b80479b377589386ac2bcca4cbc4",
+    "within_run_six_20ul_cases_20261028/barcode_outcome_data.csv": "c447cdc68fb3d3767eecd14989e9e7aaf390704885f119466cb09662dedf58cd",
+    "within_run_six_20ul_cases_20261028/selected_within_run_evidence.csv": "6501f5f33076e42d2e199bfb43a244677a44cee7787b9847a4612014e2c11650",
+    "within_run_six_20ul_cases_20261028/plotted_waveform_points.csv": "3cbc331c386008f6c85c411620e45d787772f8be769f1072b40a1e98ddfd3161"
+  },
+  "exported_tables_sha256": {
+    "barcode_workflow_example_summary.json": "762b43a474484e0eb34ad387003d0dcb75b5fd354c6c3c7707c369ad6083901b",
+    "barcode_workflow_group_summaries.csv": "a6e20c1876bf46fdc27eb97d2aff38483b36011fc2e1882e48418d23eb3eafa9",
+    "cohort_summary.json": "70bc02e2b962306f37467a4fb9dc9ff56e301e87f8543ba91c9bd2a464b63ce2",
+    "diagnostic_feature_importance.csv": "ab01cbc4f61e999ef7b740f63217a6e78524cf8222dbe174076639128f0a75a5",
+    "forecast_holdout.csv": "43f1eeb251a76ac87e90b04aa73814e076ad5e26c3bafcd6a8b8f530f175eb3d",
+    "outcome_model_performance.csv": "4e5e3a7454e1b27808c22fc237d259045396aea2a0e394d0e3de023465472520",
+    "qpm_classification_tasks.csv": "06591b5dc6c8a508ad8780871316d262b91259c87d7b408f94c7a8b3f84643cb",
+    "qpm_volume_classification.csv": "8036fe6c8ad5db763edfb9e2824ec535522e4a1808869da795696962bb1b96ef",
+    "qpm_volume_regression.csv": "0240ffd3ec5631c1270842e1385f40647701d62ef8f5e46f2d8f7145a6cfda5b"
+  },
+  "interpretation_limits": [
+    "Sequencing outcome models use same-run context and during/post-run diagnostics, not future-run forecasting.",
+    "The separate six-instrument earlier-CSA forecasting study did not establish reliable added forecasting value over outcome history; its cohort differs from the expanded diagnostic study.",
+    "QPM classification and regression targets are programmed command volumes, not independently measured delivered liquid volumes.",
+    "MAE has physical units and cannot be converted to accuracy using 1-MAE.",
+    "RawTrace rendered-image descriptors are not calibrated amplitude/SNR or specific evidence of a nucleotide/salt fault.",
+    "Count/geometry proxies at ranks 3, 4 and 9 are withheld as loading or chip-health measurements.",
+    "Held-out permutation importance is predictive dependence, not causal impact or reads lost.",
+    "Saved outer-fold feature-importance intervals are exploratory, not physical-run confidence intervals.",
+    "The observed barcode example exports only group medians/IQR and counts; its AUC values are saved within-run post-hoc score separation, not held-out diagnostic sensitivity or causal proof.",
+    "Reference qualification is an eligibility rule, not independent proof that a source run was fault-free."
+  ]
+}

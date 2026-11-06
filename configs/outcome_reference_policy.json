@@ -1,0 +1,14 @@
+{
+  "version": "outcome-reference-policy-1.0.0",
+  "minimum_physical_runs": 8,
+  "preferred_physical_runs": 20,
+  "time_policy": "prior_only",
+  "allow_cross_instrument": true,
+  "require_fields": [
+    "chip_type", "assay_type", "panel_technology", "panel_signature",
+    "workflow_script", "run_mode", "template_size", "flow_count",
+    "flow_order", "resequencing", "instrument_software", "analysis_software",
+    "sequencing_kit", "dna_barcode_count", "rna_barcode_count"
+  ],
+  "extra_match_columns": []
+}

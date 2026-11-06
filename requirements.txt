@@ -1,0 +1,10 @@
+# Tested Python 3.11.16 environment; obtain through your approved package index.
+numpy==2.4.6
+pandas==3.0.6
+scipy==1.17.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+pyarrow==25.0.0
+joblib==1.6.0
+Pillow==12.3.0
+

@@ -1,0 +1,7 @@
+target,scheme,model,n,events,brier,average_precision,roc_auc
+low_total_reads,final_chronological_holdout,historical_prevalence,54,9,0.142756367416648,0.1666666666666666,0.5
+low_total_reads,final_chronological_holdout,history_nested_selected,54,9,0.1386238397081651,0.5496705145042742,0.7691358024691358
+low_total_reads,final_chronological_holdout,nested_selected,54,9,0.1501683216006369,0.1477702191987906,0.3506172839506173
+short_mean_read_length,final_chronological_holdout,historical_prevalence,54,10,0.1666377894936593,0.1851851851851851,0.5
+short_mean_read_length,final_chronological_holdout,history_nested_selected,54,10,0.1694273646037309,0.2403819447560361,0.3727272727272727
+short_mean_read_length,final_chronological_holdout,nested_selected,54,10,0.1757879436927427,0.1700494654383492,0.3943181818181818

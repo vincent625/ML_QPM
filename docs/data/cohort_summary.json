@@ -1,0 +1,31 @@
+{
+  "source_archive_entries": 2630,
+  "unparsed_source_archives": 37,
+  "independent_physical_runs": 1789,
+  "screened_instruments": 43,
+  "primary_run_lane_observations": 2059,
+  "flagged_physical_runs": 637,
+  "apparent_dropout_physical_runs": 101,
+  "imbalance_physical_runs": 134,
+  "low_read_scope_physical_runs": 563,
+  "outcome_qualified_reference_runs": 916,
+  "usable_qpm_reference_runs": 910,
+  "usable_qpm_reference_instruments": 40,
+  "usable_qpm_reference_run_lane_observations": 961,
+  "usable_qpm_reference_runs_by_chip": {
+    "GX5": 280,
+    "GX7": 186,
+    "GX8": 276,
+    "GX9": 168
+  },
+  "completed_scope_reports": 763,
+  "processing_failed_scopes": 0,
+  "within_run_selective_divergence_physical_runs": 16,
+  "physical_runs_with_within_material_BH_q05_step": 7,
+  "plugin_version": "qpm-barcode-dropout-plugin-0.18.0-low-read-hypotheses",
+  "release_regression_tests_passed": 305,
+  "release_selected_reports_completed": 3,
+  "release_full_cohort_rerun": false,
+  "scope_note": "Counts refer to different units and cohorts; archive entries are not independent runs. Flags overlap. Reference qualification is not certification of fault-free operation. Each operation query uses its own compatible subset.",
+  "report_note": "763 scope reports were completed by the earlier cohort run. The 0.18.0 release regenerated three examples, not the entire cohort. Zero processing failures is not zero diagnostic errors or proven root causes."
+}

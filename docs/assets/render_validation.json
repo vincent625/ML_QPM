@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "models_trained": false,
+  "metrics_recomputed": false,
+  "renderer_sha256": "e0d88bb2ba5ab0437a107a9aa3a39f3307b74aab6553eb13d6b403b059e8b9bd",
+  "source_table_hashes": {
+    "barcode_workflow_group_summaries.csv": "a6e20c1876bf46fdc27eb97d2aff38483b36011fc2e1882e48418d23eb3eafa9",
+    "diagnostic_feature_importance.csv": "ab01cbc4f61e999ef7b740f63217a6e78524cf8222dbe174076639128f0a75a5",
+    "forecast_holdout.csv": "43f1eeb251a76ac87e90b04aa73814e076ad5e26c3bafcd6a8b8f530f175eb3d",
+    "outcome_model_performance.csv": "4e5e3a7454e1b27808c22fc237d259045396aea2a0e394d0e3de023465472520",
+    "qpm_classification_tasks.csv": "06591b5dc6c8a508ad8780871316d262b91259c87d7b408f94c7a8b3f84643cb",
+    "qpm_volume_classification.csv": "8036fe6c8ad5db763edfb9e2824ec535522e4a1808869da795696962bb1b96ef",
+    "qpm_volume_regression.csv": "0240ffd3ec5631c1270842e1385f40647701d62ef8f5e46f2d8f7145a6cfda5b",
+    "barcode_workflow_example_summary.json": "762b43a474484e0eb34ad387003d0dcb75b5fd354c6c3c7707c369ad6083901b",
+    "cohort_summary.json": "70bc02e2b962306f37467a4fb9dc9ff56e301e87f8543ba91c9bd2a464b63ce2",
+    "source_provenance.json": "afaff31608626fd806f82adbfeaab22f049df2fc2702c816662a9feaa7b659b8"
+  },
+  "output_sha256": {
+    "cohort_overview.png": "4999ee25077b361b404a9a98228842990084ef97184c02706dc78408224d92e0",
+    "cohort_overview.svg": "61b4916745dd5c015aafbb021166d2f1c4d9dba35b9c8a7c4936ce99c95598fb",
+    "outcome_models.png": "705d30c0e0cdbfaf6f5cec11047158d17a3445ab2f16bb276dbcaec8bcde6229",
+    "outcome_models.svg": "85cfcdb1edd31e1b073bfb7fc6687566602495e0c84f03a97a8e9a859db2d6be",
+    "qpm_volume_models.png": "94b1ff0d52490300d025c2cd2211eca47aa17fecea165df7d994b012dec47dfe",
+    "qpm_volume_models.svg": "d4250d6cbcb05482f162ae76f0ebfebd8d60fbed1e44f6eb58241d6f8a27fbba",
+    "diagnostic_features.png": "3f5b9679df5c8dc74894539d8b5f8b4c6a32f8215f95b87ef7884781615bf11b",
+    "diagnostic_features.svg": "207a5f14becef25db89c6ead8000be5722d34eb4c839d334af45706d0aed6cd6",
+    "barcode_workflow_example.png": "663d575edd1f0364716734779b85c08798d64f34a6088a4d0bd3043891fae6f6",
+    "barcode_workflow_example.svg": "c0125eb9cf99072b63e8684b421d31f740971968475d57b7e98db52a3f058a2a"
+  },
+  "no_run_sample_or_patient_identifiers": true,
+  "corporate_template_or_logos_used": false,
+  "figures": [
+    "cohort_overview",
+    "outcome_models",
+    "qpm_volume_models",
+    "diagnostic_features",
+    "barcode_workflow_example"
+  ]
+}

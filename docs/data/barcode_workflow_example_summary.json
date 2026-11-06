@@ -1,0 +1,47 @@
+{
+  "data_origin": "observed_deidentified_group_aggregates_not_synthetic",
+  "material": "DNA",
+  "sample_paths": 24,
+  "apparent_dropout_paths": 11,
+  "partial_imbalance_paths": 1,
+  "surviving_paths": 12,
+  "affected_paths": 12,
+  "source_unit": "baseline_centered_raw_sensor_counts_unresolved_physical_units",
+  "waveform_summary": "Pointwise median and 25th\u201375th percentiles across 12 separate sample paths per group; 32 normalized progress points.",
+  "temporal_note": "The two operation groups are interleaved across sample paths; later recovery follows the corresponding transfer path, not completion of the entire first group.",
+  "steps": [
+    {
+      "step": "earliest_qualifying_20ul_aspiration",
+      "workflow_step": "Adapter-ligation reaction-well to barcode aspiration",
+      "evidence_role": "earliest_qualifying_evidence",
+      "commanded_volume_ul": 20,
+      "operation": "aspiration",
+      "pipette": "PIP1",
+      "liquid_class_index": 42,
+      "affected_paths": 12,
+      "surviving_paths": 12,
+      "within_run_posthoc_separation_auc": 1.0,
+      "within_run_material_bh_q": 0.0033316674995835,
+      "historical_reference_used": false,
+      "mapping_scope": "paired_adjacent_transfer_phases"
+    },
+    {
+      "step": "later_25ul_recovery",
+      "workflow_step": "Assigned-barcode-well recovery aspiration",
+      "evidence_role": "later_supporting_evidence",
+      "commanded_volume_ul": 25,
+      "operation": "aspiration",
+      "pipette": "PIP1",
+      "liquid_class_index": 42,
+      "affected_paths": 12,
+      "surviving_paths": 12,
+      "within_run_posthoc_separation_auc": 0.9583333333333334,
+      "within_run_material_bh_q": 0.0033316674995835,
+      "historical_reference_used": false,
+      "mapping_scope": "direct_barcode_well"
+    }
+  ],
+  "historical_reference_used": false,
+  "interpretation": "Outcomes were already known. AUC is within-run post-hoc path-score separation, not held-out diagnostic sensitivity. Earliest qualifying is not necessarily the first abnormality or causal origin; no actual delivered-volume estimate or root-cause proof.",
+  "privacy": "No run, instrument, sample, barcode, well, operation index or exact date/time identifiers and no individual traces are exported."
+}

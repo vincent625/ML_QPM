@@ -1,0 +1,15 @@
+{
+  "policy_version": "user-chip-lane-qualified-reference-20261027-1.1",
+  "minimum_reads_per_lane": {
+    "GX5": 12500000,
+    "GX7": 25000000,
+    "GX8": 25000000,
+    "GX9": 50000000
+  },
+  "dropout_ratio_to_material_median": 0.15,
+  "partial_imbalance_ratio_to_material_median": 0.4,
+  "absolute_dropout_read_floor": 100.0,
+  "overrepresentation_ratio_to_survivor_median": 2.5,
+  "minimum_barcodes_per_present_material": 2,
+  "require_all_known_sibling_observations_to_qualify": true
+}

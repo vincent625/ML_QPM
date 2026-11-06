@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "For internal attribution; this is a prototype, not a peer-reviewed publication."
+title: "QPM Sentinel: From Hidden Signals to Explainable Sequencing Diagnostics"
+type: software
+version: "0.18.0"
+date-released: "2026-11-06"
+authors:
+  - family-names: Zhu
+    given-names: Yan
+  - family-names: Wang
+    given-names: Chao
+abstract: "A local, retrospective engineering prototype for barcode-aware QPM and CSA diagnostic evidence reports."
+

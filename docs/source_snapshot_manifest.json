@@ -1,0 +1,628 @@
+{
+  "status": "staged",
+  "upstream_version": "qpm-barcode-dropout-plugin-0.18.0-low-read-hypotheses",
+  "scope": "private_internal_source_snapshot",
+  "modules": 47,
+  "synthetic_test_modules": 26,
+  "original_sources_modified": false,
+  "raw_csa_data_copied": false,
+  "embedded_network_targets": false,
+  "tests_require_real_archives_or_reference_banks": false,
+  "files": [
+    {
+      "source_basename": "analyze_additional_dropout_steps.py",
+      "staged_path": "pipeline/analyze_additional_dropout_steps.py",
+      "source_sha256": "ea65446df51f5290383d2a77d18f302dc3a52c9b608527bdf7282598f9986e3f",
+      "staged_sha256": "ea65446df51f5290383d2a77d18f302dc3a52c9b608527bdf7282598f9986e3f",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "analyze_csa.py",
+      "staged_path": "pipeline/analyze_csa.py",
+      "source_sha256": "e9d25dbad4d55ab5bc21dfe58948f97274ae2f4a8c18211d29cc238bc8798d57",
+      "staged_sha256": "e9d25dbad4d55ab5bc21dfe58948f97274ae2f4a8c18211d29cc238bc8798d57",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "analyze_dna_rna_barcode_balance.py",
+      "staged_path": "pipeline/analyze_dna_rna_barcode_balance.py",
+      "source_sha256": "4336b8c5092783a629f797821eddffa216cbf21ff1be15d97a65b9da11d2a72a",
+      "staged_sha256": "4336b8c5092783a629f797821eddffa216cbf21ff1be15d97a65b9da11d2a72a",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "analyze_qpm_volume_diagnostics.py",
+      "staged_path": "pipeline/analyze_qpm_volume_diagnostics.py",
+      "source_sha256": "ae7b87a22d9f823a4c4f2bd0e54cdfb4650ec3e67abd07a0400cb669a19fcc10",
+      "staged_sha256": "ae7b87a22d9f823a4c4f2bd0e54cdfb4650ec3e67abd07a0400cb669a19fcc10",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "audit_expanded_reference_bank.py",
+      "staged_path": "pipeline/audit_expanded_reference_bank.py",
+      "source_sha256": "d2b1845228f8b54cf56ddfb047cc715b0b7211c8a43ac711d596be0e0eb33ebb",
+      "staged_sha256": "8a6f919b24400a6cc657793479fe1bf4ce0ad2e084e7e3294145c2d108ab5f5f",
+      "portability_changes": [
+        "Bank build uses the 26 verified self-contained synthetic regression modules in tests/upstream",
+        "All 47 runtime modules/support files fingerprinted, with test source hashes recorded and validated separately; no external report fixtures required"
+      ]
+    },
+    {
+      "source_basename": "build_expanded_reference_bank.py",
+      "staged_path": "pipeline/build_expanded_reference_bank.py",
+      "source_sha256": "7f3b3b0030c78809fd89474f654a0eb1c7901791a8c16e34639b7b160a8c5e6f",
+      "staged_sha256": "d55db2d9383165b9fee75bc1237411870d52c7ff093516ec3b0835672512f76a",
+      "portability_changes": [
+        "Removed personal name from explanatory docstring"
+      ]
+    },
+    {
+      "source_basename": "build_qualified_reference_bank.py",
+      "staged_path": "pipeline/build_qualified_reference_bank.py",
+      "source_sha256": "341ec658de1034541c91066173fc39d058fb7452c447c78a96ec0dd01acbdd24",
+      "staged_sha256": "f67ac4fff2827dac4373199cd0e4d7132cd6c30af02a6d90bdf72633494475cb",
+      "portability_changes": [
+        "Qualified-bank validation checks relocated test hashes separately from runtime source hashes"
+      ]
+    },
+    {
+      "source_basename": "collect_csa.py",
+      "staged_path": "pipeline/collect_csa.py",
+      "source_sha256": "f13dfb67ea0e5e7d453e93d3137c67a40705511ce720019b2bc7828cde25c9f4",
+      "staged_sha256": "0ed13c85d1318a6d9c9aeaa406eed9addc75c7c2fb9680f5b3394b72373c22ce",
+      "portability_changes": [
+        "Removed baked instrument/jump-host inventory; --targets required (network disabled by default)",
+        "Optional explicit ProxyJump applies only to supplied targets; SSH read-only operations unchanged"
+      ]
+    },
+    {
+      "source_basename": "compare_qpm_classes_operations.py",
+      "staged_path": "pipeline/compare_qpm_classes_operations.py",
+      "source_sha256": "c27955067a987873298f316f9bab4a84249beeefc5859c7bca4af90716c5fc36",
+      "staged_sha256": "c27955067a987873298f316f9bab4a84249beeefc5859c7bca4af90716c5fc36",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "compare_qpm_models.py",
+      "staged_path": "pipeline/compare_qpm_models.py",
+      "source_sha256": "e4454b442a44fd7968cd0dea516aebe7ba33aefb4ac84a233c044e06e06d9b54",
+      "staged_sha256": "e4454b442a44fd7968cd0dea516aebe7ba33aefb4ac84a233c044e06e06d9b54",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "csa_low_performance_diagnostics.py",
+      "staged_path": "pipeline/csa_low_performance_diagnostics.py",
+      "source_sha256": "edeb6e64bd0d4df31e59765fa6e7840bc715ba57c877f93771c482e3ce1dc9b8",
+      "staged_sha256": "b504484be1e3cf923d848f0a9c27741c8eb10297a17e79d78a1535ed10c09778",
+      "portability_changes": [
+        "CSA model study configurable by QPM_CSA_MODEL_STUDY, default private_artifacts/outcome_models"
+      ]
+    },
+    {
+      "source_basename": "csa_root_cause_hypotheses.py",
+      "staged_path": "pipeline/csa_root_cause_hypotheses.py",
+      "source_sha256": "59a0e3594e3692b7013480c9e6b1ace036ddcfd16cede94b74c498ea12690c5b",
+      "staged_sha256": "59a0e3594e3692b7013480c9e6b1ace036ddcfd16cede94b74c498ea12690c5b",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "find_qpm_failure_examples.py",
+      "staged_path": "pipeline/find_qpm_failure_examples.py",
+      "source_sha256": "a440be6c48ad76171f38f4302346d5366aef921e00132aa4ced7b3e5cf4835d6",
+      "staged_sha256": "a440be6c48ad76171f38f4302346d5366aef921e00132aa4ced7b3e5cf4835d6",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "forecast_10m_eight_runs.py",
+      "staged_path": "pipeline/forecast_10m_eight_runs.py",
+      "source_sha256": "867cb8ec68be0a1d287433199d9f9c9005fbe7947b112d54ec1fadba94b8836b",
+      "staged_sha256": "867cb8ec68be0a1d287433199d9f9c9005fbe7947b112d54ec1fadba94b8836b",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "forecast_next_run_csa.py",
+      "staged_path": "pipeline/forecast_next_run_csa.py",
+      "source_sha256": "9b048c11bc9dce414d938345f89564a24485080b71ff4a96facfb887b5d6d56e",
+      "staged_sha256": "9b048c11bc9dce414d938345f89564a24485080b71ff4a96facfb887b5d6d56e",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "outcome_reference.py",
+      "staged_path": "pipeline/outcome_reference.py",
+      "source_sha256": "901dbd390fd95282dbddf0213ca7109d51def292c86348bba7eedf34c6f5d2ef",
+      "staged_sha256": "901dbd390fd95282dbddf0213ca7109d51def292c86348bba7eedf34c6f5d2ef",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "plot_dropout_workflow_curves.py",
+      "staged_path": "pipeline/plot_dropout_workflow_curves.py",
+      "source_sha256": "eb23d22a2d4e8c7d1b0b8cf51d6f5d31853713765ce2627d217c7048835f16da",
+      "staged_sha256": "eb23d22a2d4e8c7d1b0b8cf51d6f5d31853713765ce2627d217c7048835f16da",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "prepare_all_qpm_volumes.py",
+      "staged_path": "pipeline/prepare_all_qpm_volumes.py",
+      "source_sha256": "e1e0e5aceab26e861752f50cd685deded9f9cb719051cb3895baab6d2055ee2c",
+      "staged_sha256": "e1e0e5aceab26e861752f50cd685deded9f9cb719051cb3895baab6d2055ee2c",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "qpm_all_volume_inference.py",
+      "staged_path": "pipeline/qpm_all_volume_inference.py",
+      "source_sha256": "a68464fcddde05a3d1033fdb97ef39aedb480158e8825ba1751a0935942ca378",
+      "staged_sha256": "a68464fcddde05a3d1033fdb97ef39aedb480158e8825ba1751a0935942ca378",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "qpm_barcode_reference.py",
+      "staged_path": "pipeline/qpm_barcode_reference.py",
+      "source_sha256": "c9c25936e3c633d6026dd22c23aee6b90d35e32e7c5f72aa8c2f9d1af9046bc3",
+      "staged_sha256": "c9c25936e3c633d6026dd22c23aee6b90d35e32e7c5f72aa8c2f9d1af9046bc3",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "qpm_baseline_comparison.py",
+      "staged_path": "pipeline/qpm_baseline_comparison.py",
+      "source_sha256": "9e5c94f362f0a81d01be6ba091fc5afd729167ae268b29f2220d0f22c9a2b852",
+      "staged_sha256": "9e5c94f362f0a81d01be6ba091fc5afd729167ae268b29f2220d0f22c9a2b852",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "qpm_cohort_publication.py",
+      "staged_path": "pipeline/qpm_cohort_publication.py",
+      "source_sha256": "fccf68d219547787e8c9bcd114f02c0f47723cfe3c004b085d3b9a2c3499c92a",
+      "staged_sha256": "fccf68d219547787e8c9bcd114f02c0f47723cfe3c004b085d3b9a2c3499c92a",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "qpm_cross_instrument_reference.py",
+      "staged_path": "pipeline/qpm_cross_instrument_reference.py",
+      "source_sha256": "ecbc9cb1f2f2b606a7ba15de381ef387edd149dfb770d9533ca6f07c0efe88a9",
+      "staged_sha256": "ecbc9cb1f2f2b606a7ba15de381ef387edd149dfb770d9533ca6f07c0efe88a9",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "qpm_diagnostic_extensions.py",
+      "staged_path": "pipeline/qpm_diagnostic_extensions.py",
+      "source_sha256": "290ca65333f9a3808f9ae4506f3446e3ada411999b3a0f5c3367d2b15c8e0096",
+      "staged_sha256": "290ca65333f9a3808f9ae4506f3446e3ada411999b3a0f5c3367d2b15c8e0096",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "qpm_dropout_plugin.py",
+      "staged_path": "pipeline/qpm_dropout_plugin.py",
+      "source_sha256": "a7aaf47f41c1c02682400e99114f4b665e8efa8c1439553dbcd3181776f91963",
+      "staged_sha256": "a7aaf47f41c1c02682400e99114f4b665e8efa8c1439553dbcd3181776f91963",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "qpm_internal_comparison.py",
+      "staged_path": "pipeline/qpm_internal_comparison.py",
+      "source_sha256": "852ec835005cb979118b3ab1cf4a72fd947884f5ce1ee6f9cd5ca5ec99050bb5",
+      "staged_sha256": "852ec835005cb979118b3ab1cf4a72fd947884f5ce1ee6f9cd5ca5ec99050bb5",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "qpm_nominal_volume_inference.py",
+      "staged_path": "pipeline/qpm_nominal_volume_inference.py",
+      "source_sha256": "b5306295a72f39d63187bdd0304a36f8844ce0ba414fd199cadb2f1716737473",
+      "staged_sha256": "b5306295a72f39d63187bdd0304a36f8844ce0ba414fd199cadb2f1716737473",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "qpm_reference_bank.py",
+      "staged_path": "pipeline/qpm_reference_bank.py",
+      "source_sha256": "42efd7ab6db5d8c7aeed7135577027b526aaeb0ba64a5d33c2b6c1258b044de1",
+      "staged_sha256": "42efd7ab6db5d8c7aeed7135577027b526aaeb0ba64a5d33c2b6c1258b044de1",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "qpm_reference_qualification.py",
+      "staged_path": "pipeline/qpm_reference_qualification.py",
+      "source_sha256": "a56ae58bb25f0702a0f55f85915e4a93d735d8c0974092432d4668193a359f5c",
+      "staged_sha256": "a56ae58bb25f0702a0f55f85915e4a93d735d8c0974092432d4668193a359f5c",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "qpm_run_metadata.py",
+      "staged_path": "pipeline/qpm_run_metadata.py",
+      "source_sha256": "0a354f913248ea30800f07510bb05f7c05b5fcc47952f6cb38417b8b96cae08f",
+      "staged_sha256": "0a354f913248ea30800f07510bb05f7c05b5fcc47952f6cb38417b8b96cae08f",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "qpm_same_run_curves.py",
+      "staged_path": "pipeline/qpm_same_run_curves.py",
+      "source_sha256": "88a24398161d003600f6cbd48eb087015226b0c09de64fe3aa5d797396876fa4",
+      "staged_sha256": "88a24398161d003600f6cbd48eb087015226b0c09de64fe3aa5d797396876fa4",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "qpm_trace_quality.py",
+      "staged_path": "pipeline/qpm_trace_quality.py",
+      "source_sha256": "a4c61643b5ba9de65c3b2535a7562632d5fd46063cf05802a87758e92c3b465b",
+      "staged_sha256": "a4c61643b5ba9de65c3b2535a7562632d5fd46063cf05802a87758e92c3b465b",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "qpm_waveform_reference.py",
+      "staged_path": "pipeline/qpm_waveform_reference.py",
+      "source_sha256": "33afb872eb62981d3fa8ec714adf224a8b11503f66f9c894348f201b5d0ce7d6",
+      "staged_sha256": "33afb872eb62981d3fa8ec714adf224a8b11503f66f9c894348f201b5d0ce7d6",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "retrain_qpm_volume_models.py",
+      "staged_path": "pipeline/retrain_qpm_volume_models.py",
+      "source_sha256": "5c0dcbbc47402085c74dfe3ff423621250f95d3c7ff01a972289cc1b3f1f5cf6",
+      "staged_sha256": "5c0dcbbc47402085c74dfe3ff423621250f95d3c7ff01a972289cc1b3f1f5cf6",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "run_flagged_qpm_batch.py",
+      "staged_path": "pipeline/run_flagged_qpm_batch.py",
+      "source_sha256": "d1719e5a39f7446904df77dfec8065ed4263cf5f7ec750df7592ae8b3775e9ca",
+      "staged_sha256": "7a4054a818c415110695d0a889ce258fe558e1edbb7ac13948a1810e39df84ae",
+      "portability_changes": [
+        "Batch runtime snapshot fingerprints runtime/support files, not relocated upstream test files"
+      ]
+    },
+    {
+      "source_basename": "run_manual_csa_plugin.py",
+      "staged_path": "pipeline/run_manual_csa_plugin.py",
+      "source_sha256": "34730ecb1cd465f3d133c1bacd5e017fcc176be3b40bed96243c8a83fd4b35fd",
+      "staged_sha256": "34730ecb1cd465f3d133c1bacd5e017fcc176be3b40bed96243c8a83fd4b35fd",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "screen_all_csa_runs.py",
+      "staged_path": "pipeline/screen_all_csa_runs.py",
+      "source_sha256": "7bcf405dcc8075f5ee17ade301a73784c65fdf6d979c2dcd24c891fa3cbc65b8",
+      "staged_sha256": "0ae75303e420bc7b4b490ed6e03fe02eb29049ff776aedfe3f7d66ce246c3561",
+      "portability_changes": [
+        "Replaced personal manual-report default with repository-relative private_data/manual_reports"
+      ]
+    },
+    {
+      "source_basename": "stage_downloaded_csa.py",
+      "staged_path": "pipeline/stage_downloaded_csa.py",
+      "source_sha256": "e5b81d7baa6b7790a6acc4b3f718e6b84249faf416dc30bb2f08ef50853e318e",
+      "staged_sha256": "da2834bfbe9e9c64a1472f677bfb3322163ceaf5cd48352f947b386696703829",
+      "portability_changes": [
+        "Removed personal name from explanatory docstring"
+      ]
+    },
+    {
+      "source_basename": "train_all_qpm_volumes.py",
+      "staged_path": "pipeline/train_all_qpm_volumes.py",
+      "source_sha256": "61c8befda84af4d78898848f759e04887e43797cec3429a46674bf87fdbd6393",
+      "staged_sha256": "61c8befda84af4d78898848f759e04887e43797cec3429a46674bf87fdbd6393",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "train_expanded_csa_outcomes.py",
+      "staged_path": "pipeline/train_expanded_csa_outcomes.py",
+      "source_sha256": "a37e184f0065ea1d01d9daae41f1a8ed38d67bce30cd6e97a2f4053df8ffa8c4",
+      "staged_sha256": "a37e184f0065ea1d01d9daae41f1a8ed38d67bce30cd6e97a2f4053df8ffa8c4",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "train_multimodal_csa.py",
+      "staged_path": "pipeline/train_multimodal_csa.py",
+      "source_sha256": "b0277b9628817a1301c6a5e4bb06e054f9dc6f1abb049cc70698f76d40831c8e",
+      "staged_sha256": "b0277b9628817a1301c6a5e4bb06e054f9dc6f1abb049cc70698f76d40831c8e",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "workflow_fingerprint_pilot.py",
+      "staged_path": "pipeline/workflow_fingerprint_pilot.py",
+      "source_sha256": "4bbe901e2a1d48a9fc523285eea21d9d99e4b71be347d82b17e190bc0121d56e",
+      "staged_sha256": "4bbe901e2a1d48a9fc523285eea21d9d99e4b71be347d82b17e190bc0121d56e",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "release_all_qpm_volume.py",
+      "staged_path": "pipeline/release_all_qpm_volume.py",
+      "source_sha256": "f79c6b2223461231369be9c092e8b45aceaa4f890dceba3d199a1791d49ebda1",
+      "staged_sha256": "f79c6b2223461231369be9c092e8b45aceaa4f890dceba3d199a1791d49ebda1",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "audit_qpm_volume_scope.py",
+      "staged_path": "pipeline/audit_qpm_volume_scope.py",
+      "source_sha256": "0b7528bb56b4397eef578a313621229555b2abbd28a611a0327bf81825df19d9",
+      "staged_sha256": "0b7528bb56b4397eef578a313621229555b2abbd28a611a0327bf81825df19d9",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "validate_all_qpm_volumes.py",
+      "staged_path": "pipeline/validate_all_qpm_volumes.py",
+      "source_sha256": "0442195b5a93d9def7b0e8895ca804f1eea99547bbe2846b0551ecacb7b084e1",
+      "staged_sha256": "0442195b5a93d9def7b0e8895ca804f1eea99547bbe2846b0551ecacb7b084e1",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "report_all_qpm_volumes.py",
+      "staged_path": "pipeline/report_all_qpm_volumes.py",
+      "source_sha256": "65954a2d1ba8fa655abf8a4856f3db0a333763b6d29046fc50793bfb09c22d51",
+      "staged_sha256": "65954a2d1ba8fa655abf8a4856f3db0a333763b6d29046fc50793bfb09c22d51",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "plot_qpm_accuracy_by_volume.py",
+      "staged_path": "pipeline/plot_qpm_accuracy_by_volume.py",
+      "source_sha256": "a9f99ad9a90ddc0782f9acdc7b1ce1aeb0fa10a40bd3c94bb7bdb47be11f40ef",
+      "staged_sha256": "a9f99ad9a90ddc0782f9acdc7b1ce1aeb0fa10a40bd3c94bb7bdb47be11f40ef",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_csa_root_cause_hypotheses.py",
+      "staged_path": "tests/upstream/test_csa_root_cause_hypotheses.py",
+      "source_sha256": "bc18b6df068320fefd71527653cadf1b37aca4ff915094496db1d6c786b2c476",
+      "staged_sha256": "bc18b6df068320fefd71527653cadf1b37aca4ff915094496db1d6c786b2c476",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_csa_low_performance_diagnostics.py",
+      "staged_path": "tests/upstream/test_csa_low_performance_diagnostics.py",
+      "source_sha256": "36d04644c65816547feb634bed5001987385ec153d81ec4781c8d074ae2fb30c",
+      "staged_sha256": "36d04644c65816547feb634bed5001987385ec153d81ec4781c8d074ae2fb30c",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_csa_low_performance_batch.py",
+      "staged_path": "tests/upstream/test_csa_low_performance_batch.py",
+      "source_sha256": "cb388335374df2b6241aecc7eb3c76810cffbcee8e0a4fd96c0f34908b2e02ef",
+      "staged_sha256": "0135e8ebe8f58ecd7b364d2244ee84ec0acba27fd4dadf6296e74e10c6cf922b",
+      "portability_changes": [
+        "Synthetic cache fixture resolves the installed runtime module, not its relocated test directory"
+      ]
+    },
+    {
+      "source_basename": "test_top5_csa_metrics.py",
+      "staged_path": "tests/upstream/test_top5_csa_metrics.py",
+      "source_sha256": "19e5c7e99f2c7c238c58192d8101015e0968c37346cbf33106e9cfc16c82387c",
+      "staged_sha256": "19e5c7e99f2c7c238c58192d8101015e0968c37346cbf33106e9cfc16c82387c",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_qpm_diagnostic_routing.py",
+      "staged_path": "tests/upstream/test_qpm_diagnostic_routing.py",
+      "source_sha256": "6080d8f1dc3f38950d66766820a01e3ee26f6ccb49b7079b610de96b674d59af",
+      "staged_sha256": "6080d8f1dc3f38950d66766820a01e3ee26f6ccb49b7079b610de96b674d59af",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_qpm_er72.py",
+      "staged_path": "tests/upstream/test_qpm_er72.py",
+      "source_sha256": "5fa843e7aa7d400d94e381add28ed85ceded75649cf0711622e3fdf49ffcdcee",
+      "staged_sha256": "5fa843e7aa7d400d94e381add28ed85ceded75649cf0711622e3fdf49ffcdcee",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_qpm_five_evidence.py",
+      "staged_path": "tests/upstream/test_qpm_five_evidence.py",
+      "source_sha256": "0e9f3898c5fd13512b011db088c10057dd41038ca6278a38e36e8b24dfec06f0",
+      "staged_sha256": "0e9f3898c5fd13512b011db088c10057dd41038ca6278a38e36e8b24dfec06f0",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_qpm_parallel_baselines.py",
+      "staged_path": "tests/upstream/test_qpm_parallel_baselines.py",
+      "source_sha256": "9c94076f6ddfe135d39388fb4797c9efedcc9d094b3704f06bc3af044879a927",
+      "staged_sha256": "9c94076f6ddfe135d39388fb4797c9efedcc9d094b3704f06bc3af044879a927",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_qpm_reference_qualification.py",
+      "staged_path": "tests/upstream/test_qpm_reference_qualification.py",
+      "source_sha256": "40034c461723afabdca25c654ae927ba6a3587eaa5a3b9c2b142d2df5721d601",
+      "staged_sha256": "40034c461723afabdca25c654ae927ba6a3587eaa5a3b9c2b142d2df5721d601",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_qpm_run_metadata.py",
+      "staged_path": "tests/upstream/test_qpm_run_metadata.py",
+      "source_sha256": "c465cb1e281685c9d72c3e31b974b24550b52112caa1a75b4a7739bf6bf4c33d",
+      "staged_sha256": "3d0e1f0b1b6413756f3331629298669a1a318e6e262a60d1f6fd814cff1eb458",
+      "portability_changes": [
+        "Replaced internal DNS domains in synthetic examples with example.internal"
+      ]
+    },
+    {
+      "source_basename": "test_qpm_same_run_curves.py",
+      "staged_path": "tests/upstream/test_qpm_same_run_curves.py",
+      "source_sha256": "b39cf5e7d78805d9582e49861be2e669c3e056745b71dba8a95a6c44dd9bee62",
+      "staged_sha256": "b39cf5e7d78805d9582e49861be2e669c3e056745b71dba8a95a6c44dd9bee62",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_qpm_sparse_display.py",
+      "staged_path": "tests/upstream/test_qpm_sparse_display.py",
+      "source_sha256": "0bcc068033bad1ffb2022f7419ba5a3d48f6a451301ebb7666051bb0a278407d",
+      "staged_sha256": "0bcc068033bad1ffb2022f7419ba5a3d48f6a451301ebb7666051bb0a278407d",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_qpm_outcome_first_layout.py",
+      "staged_path": "tests/upstream/test_qpm_outcome_first_layout.py",
+      "source_sha256": "79dbe5bc04e68c15825c533bdd57376d4251b9df03e63df8d2597b0a3ca56971",
+      "staged_sha256": "79dbe5bc04e68c15825c533bdd57376d4251b9df03e63df8d2597b0a3ca56971",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_qpm_all_volume_inference.py",
+      "staged_path": "tests/upstream/test_qpm_all_volume_inference.py",
+      "source_sha256": "f48311ef6008fdd485e76c0e6cb26a11355c0f37a39461751b265c6f744803c7",
+      "staged_sha256": "f48311ef6008fdd485e76c0e6cb26a11355c0f37a39461751b265c6f744803c7",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_qpm_nominal_plugin_integration.py",
+      "staged_path": "tests/upstream/test_qpm_nominal_plugin_integration.py",
+      "source_sha256": "5a2c76c95c8885d4551c76b2b2fa90362b2dc59c002689605537edae52aeb76b",
+      "staged_sha256": "5a2c76c95c8885d4551c76b2b2fa90362b2dc59c002689605537edae52aeb76b",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_qpm_volume_expanded.py",
+      "staged_path": "tests/upstream/test_qpm_volume_expanded.py",
+      "source_sha256": "dbe929a4c278b7f2c1fc4dffd74f914eb193ef34a8b49a4236b9c2e5fdba7958",
+      "staged_sha256": "dbe929a4c278b7f2c1fc4dffd74f914eb193ef34a8b49a4236b9c2e5fdba7958",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_all_qpm_volumes.py",
+      "staged_path": "tests/upstream/test_all_qpm_volumes.py",
+      "source_sha256": "ba8276e3678de67e5d099c335cf855115832a342b5d8699e58674a39e62d09ca",
+      "staged_sha256": "ba8276e3678de67e5d099c335cf855115832a342b5d8699e58674a39e62d09ca",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_expanded_csa_outcomes.py",
+      "staged_path": "tests/upstream/test_expanded_csa_outcomes.py",
+      "source_sha256": "5eac7021b337197a9a5fdc7392be86e71f4d1e168907a74b9572e0e29f77f2b5",
+      "staged_sha256": "5eac7021b337197a9a5fdc7392be86e71f4d1e168907a74b9572e0e29f77f2b5",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_expanded_reference_bank.py",
+      "staged_path": "tests/upstream/test_expanded_reference_bank.py",
+      "source_sha256": "bea7ecb911ed022fe182a280a2ef0e5a07135bcd3010acf23bb63a0930ff2179",
+      "staged_sha256": "a03bec91859b46b0792588fd5f637086f877b58446bc2d07723705d6a72238de",
+      "portability_changes": [
+        "Replaced internal DNS domains in synthetic examples with example.internal"
+      ]
+    },
+    {
+      "source_basename": "test_flagged_qpm_batch.py",
+      "staged_path": "tests/upstream/test_flagged_qpm_batch.py",
+      "source_sha256": "352e6e0ef846d4406e176cb72b81c5649e7299e0c11dd340110ac4f9c04ad654",
+      "staged_sha256": "352e6e0ef846d4406e176cb72b81c5649e7299e0c11dd340110ac4f9c04ad654",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_gx8_model_registration.py",
+      "staged_path": "tests/upstream/test_gx8_model_registration.py",
+      "source_sha256": "29d296f0d17ecf64db672e332ed72e1e09dc74a93e096c9caa5cb6c5aa056450",
+      "staged_sha256": "29d296f0d17ecf64db672e332ed72e1e09dc74a93e096c9caa5cb6c5aa056450",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_qpm_cohort_publication.py",
+      "staged_path": "tests/upstream/test_qpm_cohort_publication.py",
+      "source_sha256": "ec585f8d7c15f928a76b00b14672130a673262079368ffa2216710cdf76ea3f9",
+      "staged_sha256": "ec585f8d7c15f928a76b00b14672130a673262079368ffa2216710cdf76ea3f9",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_all_csa_run_screen.py",
+      "staged_path": "tests/upstream/test_all_csa_run_screen.py",
+      "source_sha256": "aa45e56c4a9d222d180c0516a3ec12b6a6140d6ac01cb3792bdc9bb5e7defaf0",
+      "staged_sha256": "aa45e56c4a9d222d180c0516a3ec12b6a6140d6ac01cb3792bdc9bb5e7defaf0",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_forecast_next_run_csa.py",
+      "staged_path": "tests/upstream/test_forecast_next_run_csa.py",
+      "source_sha256": "186474238eb4558f55703ce4ac5e00fe9ee7300b23d45ee97387dd59546715b9",
+      "staged_sha256": "186474238eb4558f55703ce4ac5e00fe9ee7300b23d45ee97387dd59546715b9",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_forecast_10m_eight_runs.py",
+      "staged_path": "tests/upstream/test_forecast_10m_eight_runs.py",
+      "source_sha256": "342e5f5b58e214ef2131fdb27f8e825f9d255f7856221a954ebbfe50c937446c",
+      "staged_sha256": "342e5f5b58e214ef2131fdb27f8e825f9d255f7856221a954ebbfe50c937446c",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "test_qpm_accuracy_by_volume.py",
+      "staged_path": "tests/upstream/test_qpm_accuracy_by_volume.py",
+      "source_sha256": "17efb8e36d5dcb2cf2ec9916c9d7485862bdf1c38df93dcebcd4fc0087224bb6",
+      "staged_sha256": "17efb8e36d5dcb2cf2ec9916c9d7485862bdf1c38df93dcebcd4fc0087224bb6",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "qpm_dropout_plugin_config.json",
+      "staged_path": "configs/qpm_dropout_plugin_config.json",
+      "source_sha256": "cbfbdee9f26e61c9bbb0fb3f7677bb284d8ea169e881c84e9f1e31b114b034c5",
+      "staged_sha256": "cbfbdee9f26e61c9bbb0fb3f7677bb284d8ea169e881c84e9f1e31b114b034c5",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "outcome_reference_policy.json",
+      "staged_path": "configs/outcome_reference_policy.json",
+      "source_sha256": "bae67dc5232f221878b80c28ddf178ab97bd2bb4e90905dedbdd6a495c577e8e",
+      "staged_sha256": "bae67dc5232f221878b80c28ddf178ab97bd2bb4e90905dedbdd6a495c577e8e",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "qpm_waveform_reference_policy.json",
+      "staged_path": "configs/qpm_waveform_reference_policy.json",
+      "source_sha256": "189d2feeebaf9edf7eeb302d5d825a607c647987cf9db132893fc6308d6b3f99",
+      "staged_sha256": "189d2feeebaf9edf7eeb302d5d825a607c647987cf9db132893fc6308d6b3f99",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "qpm_dropout_plugin_requirements.txt",
+      "staged_path": "pipeline/qpm_dropout_plugin_requirements.txt",
+      "source_sha256": "3777ee419086eef8b20db0623766c6f710dbb4795d7f7000737825e4f0af4bfa",
+      "staged_sha256": "3777ee419086eef8b20db0623766c6f710dbb4795d7f7000737825e4f0af4bfa",
+      "portability_changes": []
+    },
+    {
+      "source_basename": "QPM_ALL_OPERATIONS_VOLUME_README.md",
+      "staged_path": "pipeline/QPM_ALL_OPERATIONS_VOLUME_README.md",
+      "source_sha256": "539a7162ebc7762e96ff7b691ee95544c2cbc17cdfdc71c509ac7df591ef8b8f",
+      "staged_sha256": "f59b2b0b910bebdbf5286fdf70b3b5f74b3c9c183ed4ff049c6275a58e217d6c",
+      "portability_changes": [
+        "Replaced personal interpreter path with portable python command in historical documentation",
+        "Redacted original absolute workspace paths in historical support documentation",
+        "Marked original support README as historical reference documentation"
+      ]
+    },
+    {
+      "source_basename": "qpm_reference_qualification.py",
+      "staged_path": "configs/reference_qualification_policy.json",
+      "source_sha256": "a56ae58bb25f0702a0f55f85915e4a93d735d8c0974092432d4668193a359f5c",
+      "staged_sha256": "d80beb9a336d1fc9f525fb158bc4368b7b3f2b4d2fc2e7eb18cfebbf39f858c7",
+      "portability_changes": [
+        "Serialized the unchanged source DEFAULT_POLICY as a portable configuration example"
+      ]
+    },
+    {
+      "source_basename": "qpm_dropout_plugin_config.json",
+      "staged_path": "pipeline/qpm_dropout_plugin_config.json",
+      "source_sha256": "cbfbdee9f26e61c9bbb0fb3f7677bb284d8ea169e881c84e9f1e31b114b034c5",
+      "staged_sha256": "cbfbdee9f26e61c9bbb0fb3f7677bb284d8ea169e881c84e9f1e31b114b034c5",
+      "portability_changes": [
+        "Runtime policy duplicate required by original reference-build helpers"
+      ]
+    },
+    {
+      "source_basename": "outcome_reference_policy.json",
+      "staged_path": "pipeline/outcome_reference_policy.json",
+      "source_sha256": "bae67dc5232f221878b80c28ddf178ab97bd2bb4e90905dedbdd6a495c577e8e",
+      "staged_sha256": "bae67dc5232f221878b80c28ddf178ab97bd2bb4e90905dedbdd6a495c577e8e",
+      "portability_changes": [
+        "Runtime policy duplicate required by original reference-build helpers"
+      ]
+    },
+    {
+      "source_basename": "qpm_waveform_reference_policy.json",
+      "staged_path": "pipeline/qpm_waveform_reference_policy.json",
+      "source_sha256": "189d2feeebaf9edf7eeb302d5d825a607c647987cf9db132893fc6308d6b3f99",
+      "staged_sha256": "189d2feeebaf9edf7eeb302d5d825a607c647987cf9db132893fc6308d6b3f99",
+      "portability_changes": [
+        "Runtime policy duplicate required by original reference-build helpers"
+      ]
+    }
+  ],
+  "excluded_test_families": [
+    "publication-figure tests requiring frozen result tables",
+    "release/report validators requiring the original historical reference bank or report tree"
+  ],
+  "scientific_thresholds_or_feature_policy_changed": false
+}
